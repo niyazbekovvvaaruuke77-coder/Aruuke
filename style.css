@@ -1,0 +1,152 @@
+/* Общие стили */
+body {
+  margin: 0 auto;
+ 
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding: 0 20px;
+}
+
+.header{
+ 
+  padding: 20px;
+
+ 
+  border-bottom: 1px solid black;
+}
+.header_container{
+  max-width: 1200px;
+   display: flex;
+  justify-content: space-between;
+   margin: 0 auto;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.logo .yellow {
+  color: #f9d71c;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Main content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text_content{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.text-block {
+ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-block h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #f9d71c;
+  color: #000;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.delivery-info {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Фото справа */
+.image-block img {
+ width: 100%;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-block, .image-block {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .image-block img {
+    max-width: 300px;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+
+  .text-block h1 {
+    font-size: 28px;
+  }
+}
+.info-section{
+  display:flex;
+  justify-content:space-between;
+  background:#f7f7f7;
+  padding:25px 40px;
+  margin-top:40px;
+  border-radius:10px;
+}
+
+.services{
+    width: 60%;
+    margin-left: 0px;
+}
+.services img{
+    width: 40px;
+}
+
+.info-box{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-size:14px;
+  color:#555;
+}
+
