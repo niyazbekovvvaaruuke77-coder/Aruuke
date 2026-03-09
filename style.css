@@ -160,10 +160,29 @@ body {
   gap: 10px;
  
 }
+.restaurants{
+  padding-top: 70px;
+
+  
+}
+.restaurant-card img{
+ width: 290px;
+}
+.restaurants-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant_btn{
+height: 30px;
+width: 80px;
+border: none;
+}
 .features{
   display: flex;
   gap: 30px;
   width: 60%;
+  padding: 0 10px;
   box-shadow: 0 5px 10px rgba(107, 104, 104, 0.3);
 }
 .feature{
