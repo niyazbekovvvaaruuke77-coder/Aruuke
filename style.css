@@ -1,24 +1,25 @@
 /* Общие стили */
 body {
   margin: 0 auto;
- 
   background-color: #fff;
   font-family: 'Inter', sans-serif;
   padding: 0 20px;
 }
 
-.header{
- 
+.header {
   padding: 20px;
-
- 
   border-bottom: 1px solid black;
 }
-.header_container{
+
+.header_container {
   max-width: 1200px;
-   display: flex;
+  display: flex;
   justify-content: space-between;
-   margin: 0 auto;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /* Navbar */
 .navbar {
@@ -60,13 +61,14 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-.text_content{
+
+.text_content {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .text-block {
- 
   display: flex;
   justify-content: space-between;
 }
@@ -100,17 +102,19 @@ body {
 
 /* Фото справа */
 .image-block img {
- width: 100%;
+  width: 100%;
 }
 
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
+
   .main-content {
     flex-direction: column;
     padding: 20px;
   }
 
-  .text-block, .image-block {
+  .text-block,
+  .image-block {
     max-width: 100%;
     width: 100%;
   }
@@ -125,28 +129,245 @@ body {
     font-size: 28px;
   }
 }
-.info-section{
-  display:flex;
-  justify-content:space-between;
-  background:#f7f7f7;
-  padding:25px 40px;
-  margin-top:40px;
-  border-radius:10px;
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  background: #f7f7f7;
+  padding: 25px 40px;
+  margin-top: 40px;
+  border-radius: 10px;
 }
 
-.services{
-    width: 60%;
-    margin-left: 0px;
-}
-.services img{
-    width: 40px;
+.services {
+  width: 60%;
+  margin-left: 0px;
 }
 
-.info-box{
-  display:flex;
-  align-items:center;
-  gap:15px;
-  font-size:14px;
-  color:#555;
+.services img {
+  width: 40px;
 }
 
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  color: #555;
+}
+.restaurants-grid {
+  display: flex;
+  gap: 10px;
+ 
+}
+.features{
+  display: flex;
+  gap: 30px;
+  width: 60%;
+  box-shadow: 0 5px 10px rgba(107, 104, 104, 0.3);
+}
+.feature{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+}
+.feature img{
+  width: 40px;
+}
+.feature p{
+  opacity: 0.7;
+}
+/* SEARCH BLOCK */
+
+.search-block{
+  display: flex;
+background:#fdeded;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.search-block h1{
+  margin-bottom: 10px;
+}
+.search-block p{
+  margin-bottom: 20px;
+  color:#666
+}
+.search-box{
+margin-top:20px;
+}
+
+.search-box input{
+padding:12px;
+width:300px;
+border:none;
+border-radius:5px;
+}
+
+.search-box button{
+padding:12px 20px;
+background:#FFD43B;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+/* CATEGORIES */
+
+.categories{
+padding:40px;
+background:white;
+}
+
+.title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.category-list{
+display:flex;
+gap: 1px;
+margin-top:10px;
+flex-wrap:wrap;
+}
+
+.category{
+padding:10px 15px;
+background:#ffffff;
+border-radius:10px;
+}
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+padding:60px;
+background:#ffffff;
+}
+
+.stat{
+text-align:center;
+}
+
+.circle{
+width:70px;
+height:70px;
+background:#FFD43B;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+font-weight:bold;
+margin:auto;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Блок с текстом и маленькими картинками */
+.instagram-section {
+  text-align: left;
+}
+
+.instagram-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.instagram-images {
+  display: flex;
+  gap: 15px;
+}
+
+.instagram-images img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+  .instagram-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instagram-images img {
+    max-width: 90%;
+  }
+}
+.footer{
+    background:#4a4f63;
+    color:white;
+    padding:60px 0;
+}
+
+.footer-container{
+    width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-col{
+    width:22%;
+}
+
+.logo{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.logo span{
+    color:#f2c94c;
+}
+
+.footer-col h3{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-col ul li{
+    margin-bottom:10px;
+    color:#cfcfcf;
+    font-size:14px;
+}
+
+.stores img{
+    width:120px;
+    margin-right:10px;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials i{
+    margin-right:15px;
+    font-size:18px;
+}
+
+.footer-bottom{
+    width:1200px;
+    margin:40px auto 0;
+    display:flex;
+    justify-content:flex-end;
+    gap:30px;
+    font-size:13px;
+    color:#cfcfcf;
+}

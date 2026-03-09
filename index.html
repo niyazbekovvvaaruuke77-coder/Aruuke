@@ -1,53 +1,251 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yellow Kitchen</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <!-- Navbar -->
-<header class="header">
+  <header class="header">
     <div class="header_container">
-    <div class="logo"><span class="yellow">yellow</span>kitchen</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Log in</a></li>
-        <li><a href="#">Cart (0)</a></li>
-      </ul>
-    </nav>
+
+      <div class="logo">
+        <span class="yellow">yellow</span>kitchen
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Cart (0)</a></li>
+        </ul>
+      </nav>
+
     </div>
   </header>
 
   <!-- Main content -->
   <main class="main-content">
+<div class="container">
     <!-- Левый блок с текстом -->
     <div class="text-block">
-        <div class="text_content">
-              <h1 class="title">Your Food court at home</h1>
-                <div class="buttons">
-                    <button>Delivery</button>
-                    <button>Takeout</button>
-                </div>
-                <div class="delivery-info">
-                    <p>Fast delivery, fresh food, and safe packaging!</p>
-                </div>
+
+      <div class="text_content">
+        <h1 class="title">Your Food court at home</h1>
+
+        <div class="buttons">
+          <button>Delivery</button>
+          <button>Takeout</button>
         </div>
-    
-       <div class="image-block">
-      <img src="./images/Photo.png" alt="Fresh salad">
-         </div>
+
+        <div class="delivery-info">
+          <p>Fast delivery, fresh food, and safe packaging!</p>
+        </div>
+      </div>
+
+      <div class="image-block">
+        <img src="./images/Photo.png" alt="Fresh salad">
+      </div>
+
+    </div>
+     <div class="features">
+  
+  <div class="feature">
+    <img src="./images/Food delivery concept (Community) (1)/ic/infographic/Page 1.png" alt="">
+    <p>Delivery in all Paris in less than 30 minutes</p>
+  </div>
+
+  <div class="feature">
+    <img src="./images/Food delivery concept (Community) (1)/ic/infographic/Page 1.png" alt="">
+    <p>Free delivery from 29 euros</p>
+  </div>
+
+  <div class="feature">
+    <img src="./images/Food delivery concept (Community) (1)/ic/infographic/Page 1.png" alt="">
+    <p>Only fresh and French products</p>
+  </div>
+
+</div>
+
+
+  <section class="restaurants">
+  <div class="restaurants-header">
+    <h2>Restaurants</h2>
+    <button class="show-all">show all<button>
+  </div>
+
+  <div class="restaurants-grid">
+
+    <div class="restaurant-card">
+      <img src="./images/restaurant.png" alt="Burger">
+      <p>Burger D'lice</p>
     </div>
 
-    <!-- Правый блок с фото -->
-   
-    
+    <div class="restaurant-card">
+      <img src="./images/restaurant2.png" alt="Pasta">
+      <p>Il Pastificio</p>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="./images/restaurant3.png" alt="Salad">
+      <p>Believe</p>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="./images/restaurant4.png" alt="Asian">
+      <p>Bô Urban Food</p>
+    </div>
+
+  </div>
+</section>
+<!-- Блок поиска -->
+<section class="search-block">
+
+    <div class="search-text">
+        <h1>Your nearest restaurants</h1>
+        <p>Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Enter delivery address">
+        <button>Send</button>
+    </div>
+
+</section>
+<!-- Блок категорий -->
+<section class="categories">
+    <div class="title">
+        <h2>Specialities</h2>
+        <button class="show-all">show all</button>
+    </div>
+
+    <div class="category-list">
+        <div class="category">
+            <img src="./images/1.png" alt="Bagel">
+        </div>
+        <div class="category">
+            <img src="./images/2.png" alt="Burger">
+        </div>
+        <div class="category">
+            <img src="./images/3.png" alt="Chicken">
+        </div>
+        <div class="category">
+            <img src="./images/4.png" alt="Fish">
+        </div>
+        <div class="category">
+            <img src="./images/5.png" alt="Fish & Chips">
+        </div>
+        <div class="category">
+            <img src="./images/6.png" alt="Salads">
+        </div>
+        <div class="category">
+            <img src="images/7.png" alt="Pizza">
+        </div>
+        <div class="category">
+            <img src="./images/8.png" alt="Pasta">
+        </div>
+    </div>
+</section>
+<!-- Блок статистики -->
+<section class="stats">
+    <div class="stat">
+        <div class="circle">1</div>
+        <p>kitchen</p>
+    </div>
+
+    <div class="stat">
+        <div class="circle">11</div>
+        <p>specialities</p>
+    </div>
+
+    <div class="stat">
+        <div class="circle">11</div>
+        <p>restaurants</p>
+    </div>
+
+    <div class="stat">
+        <div class="circle">1</div>
+        <p>transport costs</p>
+    </div>
+</section>
+    <div><img src="./images/карта.png"></div>
+
+    <div class="instagram-section">
+      <h2>#YellowKitchens in Instagram</h2>
+      <div class="instagram-images">
+        <img src="./images/инст1.png" alt="">
+        <img src="./images/инст2.png" alt="">
+        <img src="./images/инст3.png" alt="">
+        <img src="./images/инст4.png" alt="">
+      </div>
+    </div>
+
+</div>
   </main>
 
-  <section class="bottom-image">
-    <img src="./images/Block-restaurants (2).png" alt="restaurants">
-</section>
+ 
+    <footer class="footer">
+  <div class="footer-container">
 
+    <div class="footer-col logo-col">
+      <h2 class="logo"><span>yellow</span>kitchen</h2>
+
+      <div class="stores">
+        <img src="./images/ффф.png" alt="App Store">
+        <img src="./images/ккк.png" alt="Google Play">
+      </div>
+
+      <div class="socials">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>About us</h3>
+      <ul>
+        <li>Concept</li>
+        <li>Franchise</li>
+        <li>Business</li>
+        <li>Restaurant signup</li>
+        <li>For Investors</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Get help</h3>
+      <ul>
+        <li>Read FAQs</li>
+        <li>Restaurants</li>
+        <li>Specialities</li>
+        <li>Sign up to deliver</li>
+        <li>English</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact us</h3>
+      <ul>
+        <li>Yellow kitchen Paris 11</li>
+        <li>69 avenue de la Republique 75011 Paris</li>
+        <li>0800 111 126</li>
+        <li>contact@yellowkitchens.com</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>Privacy Policy</p>
+    <p>Terms</p>
+    <p>© 2020 Yellow kitchen</p>
+  </div>
+
+</footer>
 </body>
 </html>
