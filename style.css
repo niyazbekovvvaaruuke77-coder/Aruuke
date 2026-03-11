@@ -105,31 +105,6 @@ body {
   width: 100%;
 }
 
-/* Адаптивность для мобильных */
-@media (max-width: 768px) {
-
-  .main-content {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .text-block,
-  .image-block {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .image-block img {
-    max-width: 300px;
-    margin: 20px auto 0 auto;
-    display: block;
-  }
-
-  .text-block h1 {
-    font-size: 28px;
-  }
-}
-
 .info-section {
   display: flex;
   justify-content: space-between;
@@ -250,7 +225,7 @@ align-items:center;
 
 .category-list{
 display:flex;
-gap: 1px;
+gap: 10px;
 margin-top:10px;
 flex-wrap:wrap;
 }
@@ -381,4 +356,219 @@ gap: 7px;
     gap:30px;
     font-size:13px;
     color:#cfcfcf;
+}
+
+@media (max-width:1024px){
+
+body{
+padding:0 15px;
+}
+
+.header_container{
+max-width:100%;
+}
+
+.container{
+max-width:100%;
+}
+
+.main-content{
+max-width:100%;
+}
+
+/* HERO */
+
+.text-block{
+flex-direction:column;
+gap:40px;
+}
+
+.text-block h1{
+font-size:45px;
+text-align:center;
+}
+
+.image-block img{
+max-width:100%;
+}
+
+/* FEATURES */
+
+.features{
+width:100%;
+flex-wrap:wrap;
+justify-content:center;
+padding:20px;
+}
+
+.feature{
+width:100%;
+}
+
+/* RESTAURANTS */
+
+.restaurants-grid{
+flex-wrap:wrap;
+justify-content:center;
+gap:70px;
+}
+
+.restaurant-card img{
+width:240px;
+}
+
+/* SEARCH */
+
+.search-block{
+flex-direction:column;
+text-align:center;
+padding:30px;
+}
+
+.search-box input{
+width:250px;
+}
+
+/* CATEGORIES */
+
+.category-list{
+justify-content:center;
+}
+
+/* INSTAGRAM */
+
+.instagram-images{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* FOOTER */
+
+.footer-container{
+width:100%;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.footer-col{
+width:45%;
+}
+
+.footer-col h3,
+.footer-col ul{
+margin-left:0;
+}
+
+.footer-bottom{
+width:100%;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width:768px){
+.header{
+  padding-bottom:0;
+}
+
+/* HERO */
+  
+  
+
+
+.text-block h1{
+font-size:36px;
+}
+
+.buttons{
+flex-direction:column;
+gap:10px;
+}
+
+.buttons button{
+width:100%;
+}
+
+/* FEATURES */
+
+.features{
+flex-direction:column;
+gap:20px;
+}
+
+.feature{
+width:100%;
+}
+
+/* RESTAURANTS */
+
+.restaurants-header{
+flex-direction:row;
+gap:10px;
+}
+
+.restaurants-grid{
+flex-direction:column;
+align-items:center;
+gap: 0;
+}
+
+.restaurant-card img{
+width:100%;
+max-width:320px;
+}
+
+/* SEARCH */
+
+.search-box input{
+width:200px;
+}
+
+/* CATEGORIES */
+
+.category{
+width:80px;
+}
+
+/* INSTAGRAM */
+
+.instagram-images{
+flex-direction:column;
+align-items:center;
+}
+
+.instagram-images img{
+max-width:90%;
+}
+
+/* FOOTER */
+
+.footer-container{
+flex-direction:column;
+text-align:center;
+}
+
+.footer-col{
+width:100%;
+}
+
+.stores{
+justify-content:center;
+}
+
+.socials{
+display:flex;
+justify-content:center;
+}
+
+.footer-bottom{
+text-align:center;
+}
+
 }
