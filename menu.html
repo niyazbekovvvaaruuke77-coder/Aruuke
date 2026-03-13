@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Меню с корзиной</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  .menu { display: flex; flex-wrap: wrap; gap: 20px; }
+  .item { border: 1px solid #ccc; padding: 10px; width: 150px; text-align: center; }
+  .item img { width: 100%; height: auto; }
+  .btn { margin-top: 5px; padding: 5px 10px; font-size: 12px; cursor: pointer; }
+  .cart { border: 1px solid #000; padding: 10px; width: 300px; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<h1>Меню</h1>
+
+<div class="menu">
+  <div class="item">
+    <img src="https://img.iamcook.ru/2024/upl/recipes/cat/u-b407678da66810be60c6a8e246a76ea1.JPG" alt="Food 1">
+    <div>Салат Цезарь</div>
+    <div>$5</div>
+    <button class="btn" onclick="addToCart('Салат Цезарь', 5)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://vkusvill.ru/upload/resize/1046176/tom-yam_588x409x90_c.webp" alt="Food 2">
+    <div>Суп Том Ям</div>
+    <div>$6</div>
+    <button class="btn" onclick="addToCart('Суп Том Ям', 6)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://menu2go.ru/images/food/394/394_577_20220407112607_2314.jpg" alt="Food 3">
+    <div>Бургер Классический</div>
+    <div>$8</div>
+    <button class="btn" onclick="addToCart('Бургер Классический', 8)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://img.iamcook.ru/old/upl/recipes/cat/u6009-8e00fe26949a37ddf403c897f0081cf6.jpg" alt="Food 4">
+    <div>Паста Карбонара</div>
+    <div>$7</div>
+    <button class="btn" onclick="addToCart('Паста Карбонара', 7)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://the-cafe.ru/wp-content/uploads/2020/11/147c3814bbb34a77afdbc66e9ef20ed7_584x584.jpeg" alt="Food 5">
+    <div>Пицца Маргарита</div>
+    <div>$10</div>
+    <button class="btn" onclick="addToCart('Пицца Маргарита', 10)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://samuraifood.kg/wp-content/uploads/2022/11/kaliforniya-l.png" alt="Food 6">
+    <div>Ролл Калифорния</div>
+    <div>$12</div>
+    <button class="btn" onclick="addToCart('Ролл Калифорния', 12)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://whogrill.ru/upload/resize_cache/webp/iblock/e71/e7112443113d2733c24f5ff9db55f465.webp" alt="Food 7">
+    <div>Лосось на гриле</div>
+    <div>$15</div>
+    <button class="btn" onclick="addToCart('Лосось на гриле', 15)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 8">
+    <div>Куриные крылья</div>
+    <div>$9</div>
+    <button class="btn" onclick="addToCart('Куриные крылья', 9)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 9">
+    <div>Овощное рагу</div>
+    <div>$6</div>
+    <button class="btn" onclick="addToCart('Овощное рагу', 6)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 10">
+    <div>Стейк Рибай</div>
+    <div>$20</div>
+    <button class="btn" onclick="addToCart('Стейк Рибай', 20)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 11">
+    <div>Томаты с моцареллой</div>
+    <div>$5</div>
+    <button class="btn" onclick="addToCart('Томаты с моцареллой', 5)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 12">
+    <div>Суши Филадельфия</div>
+    <div>$13</div>
+    <button class="btn" onclick="addToCart('Суши Филадельфия', 13)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 13">
+    <div>Картофель фри</div>
+    <div>$4</div>
+    <button class="btn" onclick="addToCart('Картофель фри', 4)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 14">
+    <div>Чизкейк</div>
+    <div>$6</div>
+    <button class="btn" onclick="addToCart('Чизкейк', 6)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 15">
+    <div>Морковный суп</div>
+    <div>$5</div>
+    <button class="btn" onclick="addToCart('Морковный суп', 5)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 16">
+    <div>Салат Греческий</div>
+    <div>$6</div>
+    <button class="btn" onclick="addToCart('Салат Греческий', 6)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 17">
+    <div>Паста Болоньезе</div>
+    <div>$8</div>
+    <button class="btn" onclick="addToCart('Паста Болоньезе', 8)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 18">
+    <div>Ризотто с грибами</div>
+    <div>$9</div>
+    <button class="btn" onclick="addToCart('Ризотто с грибами', 9)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 19">
+    <div>Торт Наполеон</div>
+    <div>$7</div>
+    <button class="btn" onclick="addToCart('Торт Наполеон', 7)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 20">
+    <div>Кофе Латте</div>
+    <div>$3</div>
+    <button class="btn" onclick="addToCart('Кофе Латте', 3)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 21">
+    <div>Фруктовый салат</div>
+    <div>$5</div>
+    <button class="btn" onclick="addToCart('Фруктовый салат', 5)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 22">
+    <div>Блины с ягодами</div>
+    <div>$6</div>
+    <button class="btn" onclick="addToCart('Блины с ягодами', 6)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 23">
+    <div>Сэндвич с курицей</div>
+    <div>$7</div>
+    <button class="btn" onclick="addToCart('Сэндвич с курицей', 7)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 24">
+    <div>Смузи ягодный</div>
+    <div>$4</div>
+    <button class="btn" onclick="addToCart('Смузи ягодный', 4)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 25">
+    <div>Куриный суп</div>
+    <div>$6</div>
+    <button class="btn" onclick="addToCart('Куриный суп', 6)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 26">
+    <div>Печенье с шоколадом</div>
+    <div>$3</div>
+    <button class="btn" onclick="addToCart('Печенье с шоколадом', 3)">Добавить в корзину</button>
+  </div>
+  <div class="item">
+    <img src="https://via.placeholder.com/150" alt="Food 27">
+    <div>Мохито безалкогольный</div>
+    <div>$5</div>
+    <button class="btn" onclick="addToCart('Мохито безалкогольный', 5)">Добавить в корзину</button>
+  </div>
+</div>
+
+<h2>Корзина</h2>
+<div class="cart" id="cart-items"></div>
+
+<script>
+let cart = [];
+
+function addToCart(name, price) {
+  cart.push({name, price});
+  updateCart();
+}
+
+function updateCart() {
+  const cartContainer = document.getElementById('cart-items');
+  cartContainer.innerHTML = '';
+  cart.forEach(item => {
+    const div = document.createElement('div');
+    div.textContent = ${item.name} - $${item.price};
+    cartContainer.appendChild(div);
+  });
+}
+</script>
+
+</body>
+</html>

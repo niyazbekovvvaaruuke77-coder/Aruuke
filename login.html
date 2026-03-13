@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Регистрация</title>
+
+<style>
+
+body{
+  font-family: Arial;
+  background:#f5f5f5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.form-box{
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  width:350px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2{
+  text-align:center;
+}
+
+input, select{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  background:#FFC107;
+  border:none;
+  border-radius:5px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#ffb300;
+}
+
+.link{
+  text-align:center;
+  margin-top:10px;
+  font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h2>Регистрация</h2>
+
+<p style="text-align:center;">Создайте аккаунт чтобы заказывать еду онлайн 🍕</p>
+
+<form action="index.html">
+
+<input type="text" placeholder="Ваше имя" required>
+
+<input type="email" placeholder="Электронная почта" required>
+
+<input type="tel" placeholder="Номер телефона" required>
+
+<input type="password" placeholder="Пароль" required>
+
+<label>Ваш пол:</label><br>
+
+<input type="radio" name="gender"> Мужской<br>
+<input type="radio" name="gender"> Женский<br><br>
+
+<label>Страна:</label>
+
+<select>
+<option>Выберите страну</option>
+<option>Казахстан</option>
+<option>Россия</option>
+<option>Кыргызстан</option>
+<option>Узбекистан</option>
+</select>
+
+<button type="submit">Зарегистрироваться</button>
+
+</form>
+
+<div class="link">
+<a href="index.html">← Назад на главный экран</a>
+</div>
+
+</div>
+
+</body>
+</html>
